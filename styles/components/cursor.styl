@@ -1,0 +1,34 @@
+body
+  cursor none !important
+*
+  cursor none !important
+*:hover
+  cursor none !important
+
+.cursor
+  circle(.8rem)
+  top -4rem
+  left -4rem
+  pointer-events none
+  // display none
+  position fixed
+  border-radius 50%
+  z-index 99999
+  background-color $primary
+  will-change left, top
+  &:before
+    circle(6.4rem)
+    content ''
+    top -2.8rem
+    left -2.8rem
+    opacity .4
+    border-radius 50%
+    position absolute
+    background-color $primary
+    transition all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transform scale(0)
+    z-index -1
+
+
+.cursor__active:before
+    transform scale(1)

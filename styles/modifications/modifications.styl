@@ -1,0 +1,117 @@
+.slick
+  &-prev,
+  &-next
+    top 50%
+    &:before
+      font-size 2.4rem
+      color #fff
+      transition color .2s
+  &-prev
+    left -3rem
+    &:before
+      content '\f104'
+      font-family 'FontAwesome'
+  &-next
+    right -3rem
+    &:before
+      content '\f105'
+      font-family 'FontAwesome'
+  &-dots
+    bottom -5rem
+    left 0
+    li
+      margin 0
+  &-dots li button:before
+    color #dddddc
+    font-size 3.5rem
+    opacity 1
+  &-dots li.slick-active button:before
+    color $primary
+    opacity 1
+
+.slider
+  opacity 0
+  transition opacity .5s ease
+
+.slick-initialized
+  opacity 1
+
+.simple-slider,
+.simple-slider-dots,
+.photos,
+.partners,
+.layout__slider
+  .slick
+    &-arrow
+      background-color #fff
+      border-radius 50%
+      circle(5rem)
+      display flex
+      justify-content center
+      transition background-color .2s ease
+      z-index 10
+      &:before
+        color $primary
+        display block
+        font-size 2.4rem
+        font-weight 600
+      &:hover
+        background-color $primary
+        &:before
+          color #fff
+    &-prev
+      left 5rem
+      &:before
+        transform translateX(-2px)
+    &-next
+      right 5rem
+      &:before
+        transform translateX(2px)
+
+.layout__slider
+  .slick
+    &-arrow
+      circle(2.4rem)
+      &:before
+        font-size 1.6rem
+    &-prev
+      left 2rem
+      &:before
+        transform translate(-1.5px, -.5px)
+    &-next
+      right 2rem
+      &:before
+        transform translateX(1.5px)
+
+.noUi
+  &-horizontal
+    border none
+    height 6px
+    .noUi-handle
+      circle(1.8rem)
+  &-handle
+    background $primary
+    box-shadow none
+    border 2px solid #fff
+    border-radius 50%
+  &-connect
+    background $primary
+    box-shadow none
+  &-marker-horizontal.noUi-marker,
+  &-marker-horizontal.noUi-marker-large
+    display none
+  &-pips
+    color $main
+    font-family $font
+    font-weight 300
+
+
+
+@media(max-width 767px)
+  .slick
+    &-dots
+      bottom -3rem
+
+
+
+

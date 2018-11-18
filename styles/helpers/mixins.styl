@@ -1,0 +1,44 @@
+debug()
+  *
+    outline 1px solid teal
+    & *
+      outline 1px solid lightblue
+      & *
+        outline 1px solid purple
+
+size($height, $width)
+  height $height
+  width $width
+
+
+circle($size)
+  height $size
+  width $size
+
+
+clearfix()
+  &:after
+    content ""
+    display table
+    clear both
+
+center()
+  bottom 0
+  left 0
+  margin auto
+  position absolute
+  right 0
+  top 0
+
+link()
+  border-bottom 1px solid rgba($link, .2)
+  color $link
+  display inline
+  text-decoration none
+  transition border-color .4s, color .4s
+  &:hover
+    color $primary
+    border-color rgba($primary, .2)
+
+
+  

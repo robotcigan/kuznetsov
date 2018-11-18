@@ -1,0 +1,36 @@
+{
+  "name": "egor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blast-text": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6",
+    "jquery": "^3.2.1",
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.14.0",
+    "coffee-script": "^1.12.7",
+    "gsap": "^1.20.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-stylus": "^2.6.0",
+    "pug": "^2.0.0-beta11",
+    "scrollmagic": "^2.0.5",
+    "smoothscroll-for-websites": "^1.4.6",
+    "tilt.js": "^1.2.1"
+  },
+  "description": ""
+}

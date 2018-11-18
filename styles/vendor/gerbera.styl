@@ -1,0 +1,27 @@
+$src = '../fonts/Gerbera/'
+$name = 'Gerbera'
+
+font(name, type, weight, style)
+  font-family name
+  src url($src + name + type + '.eot?#iefix') format('embedded-opentype'),
+      url($src + name + type + '.otf') format('opentype'),
+      url($src + name + type + '.woff') format('woff'),
+      url($src + name + type + '.ttf') format('truetype')
+  font-weight weight
+  font-style style
+
+@font-face
+  font($name,' Light', 300, normal)
+
+@font-face
+  font($name,'', 400, normal)
+
+@font-face
+  font($name,' Medium', 500, normal)
+
+@font-face
+  font($name,' Bold', 700, normal)
+
+@font-face
+  font($name,' Black', 800, normal)
+

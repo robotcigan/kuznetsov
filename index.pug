@@ -1,0 +1,104 @@
+extends layout.pug
+
+
+block content
+
+  .hero
+    .hero__video
+      //- video(autoplay loop poster="./video/main.jpg")
+      video(autoplay loop)
+        source(src="./video/some.mp4" type="video/mp4")
+        //- source(src="./video/main.ogv" type="video/ogv")
+        //- source(src="./video/main.webm" type="video/webm")
+        //- source(src="./video/main.mov" type="video/mov")
+    .hero__align
+      .grid.grid--container
+        .row
+          .col.col--sm-10.col--sm-offset-2
+            .hero__container
+              h1.h1 Разработка скриптов <br>и парсеров для сайтов
+              p.hero__description Разработать парсер фотографий для сервиса инстаграм. Бихевиоризм неравномерен. Элемент политического процесса
+              .btn.btn--white
+                .btn__icon
+                  img(src="./img/arrow.svg", alt="").svg
+                .btn__text Заказать разработку
+          //- .scroll-down
+
+  section.section.about
+    .grid.grid--container
+      .row
+        .col.col--lg-8.col--lg-offset-2
+          .row
+            .col.col--sm-6
+              h2.h2 Обо мне
+            .col.col--sm-6
+              .text.basic-animation-container
+                p.basic-animation Как было показано выше, полимодальная организация варьирует музыкальный рок-н-ролл 50-х. Глиссандо продолжает звукоряд. Как отмечает Теодор Адорно, алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой структурой традиционен. Кластерное вибрато трансформирует музыкальный контрапункт контрастных фактур. Действительно, аллегро просветляет форшлаг. Дифференциация, следовательно, выстраивает контрапункт контрастных фактур, потому что современная музыка не запоминается.
+                p.basic-animation Полимодальная организация синхронно представляет собой ревер. Пауза, в первом приближении, фактурна. Гармонический интервал имитирует целотоновый флэнжер, как и реверансы в сторону ранних "роллингов". Детройтское техно монотонно просветляет фьюжн. Пентатоника, следовательно, изящно начинает эффект "вау-вау".
+                p.basic-animation Пуантилизм, зародившийся в музыкальных микроформах начала ХХ столетия, нашел далекую историческую параллель в лице средневекового гокета, однако рондо выстраивает музыкальный пласт. Протяженность вызывает винил. Нонаккорд, следовательно, неустойчив. Рондо трансформирует звукоряд, благодаря широким мелодическим скачкам. Протяженность просветляет канал.
+
+  section.section.services
+    .grid.grid--container
+      .row
+        .col.col--lg-8.col--lg-offset-2
+          h2.h2 Разрабатываю
+          .row.basic-animation-container
+            .col.col--sm-6
+              .service.tilt.basic-animation
+                .service__img
+                  img(src="./img/service-1.png", alt="")
+                h3.h3.service__name Парсеры
+                p.service__desc Геометрическая прогрессия стремительно нейтрализует контрпример. По сути, умножение двух векторов (векторное) упорядочивает убывающий разрыв функции. Алгебра переворачивает интеграл по поверхности.
+                .btn.btn--white
+                  .btn__icon
+                    img(src="./img/arrow.svg", alt="").svg
+                  .btn__text Заказать разработку
+            .col.col--sm-6
+              .service.tilt.basic-animation
+                .service__img
+                  img(src="./img/service-2.png", alt="")
+                h3.h3.service__name Скрипты
+                p.service__desc Геометрическая прогрессия стремительно нейтрализует контрпример. По сути, умножение двух векторов (векторное) упорядочивает убывающий разрыв функции. Алгебра переворачивает интеграл по поверхности.
+                .btn.btn--white
+                  .btn__icon
+                    img(src="./img/arrow.svg", alt="").svg
+                  .btn__text Заказать разработку
+
+  section.section
+    .grid.grid--container
+      .row
+        .col.col--lg-8.col--lg-offset-2
+          h2.h2 Мои работы
+          .row.basic-animation-container
+            .col.col--sm-4
+              p.basic-animation Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae velit natus, voluptatem unde dolore tempora repellendus fugiat, minima tempore beatae iure fugit perferendis amet numquam a reiciendis harum dolor ducimus.
+            .col.col--sm-4
+              p.basic-animation Est commodi nisi voluptatibus! Quaerat labore voluptatem enim incidunt similique debitis quasi, quos eaque placeat vitae praesentium cupiditate, maxime porro quia iste nihil commodi sunt, magni blanditiis optio ad deserunt!
+            .col.col--sm-4
+              p.basic-animation Corrupti alias praesentium culpa incidunt illo nesciunt, delectus, nam, eveniet, maxime ut commodi. Praesentium iste ullam beatae voluptatem atque odio ad perferendis mollitia. Dignissimos aspernatur similique dolore modi, dolorem beatae?
+
+  section.section
+    .grid.grid--container
+      .row
+        .col.col--lg-8.col.col--lg-offset-2
+          .row
+            .col.col--sm-6
+              h2.h2 Отправить заявку на разработку
+              p Геометрическая прогрессия стремительно нейтрализует контрпример. По сути, умножение двух векторов (векторное) упорядочивает убывающий разрыв
+            .col.col--sm-5.col--sm-offset-1
+              form.form.basic-animation-container
+                .form-control.basic-animation
+                  input(type="text" placeholder="Как вас зовут?")
+                .form-control.basic-animation
+                  input(type="text" placeholder="Номер телефона")
+                .form-control.basic-animation
+                  textarea(placeholder="Что хотите разработать?")
+                .btn.btn--white.basic-animation
+                    .btn__icon
+                      img(src="./img/arrow.svg", alt="").svg
+                    .btn__text Заказать разработку
+
+
+
+
+

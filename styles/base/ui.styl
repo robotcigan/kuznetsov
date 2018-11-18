@@ -1,0 +1,359 @@
+// .btn
+//   border 0
+//   color #fff
+//   cursor pointer
+//   display inline-block
+//   font-family $font
+//   font-size 1.6rem
+//   font-weight 600
+//   flex-shrink 0
+//   line-height 1
+//   letter-spacing .4px
+//   max-height 5.4rem
+//   padding 1.7rem 2.4rem
+//   text-decoration none
+//   transition all .4s
+//   &--primary
+//     background $primary
+//     &:hover
+//       background-color $primary - 15%
+//   &--white
+//     background-color #fff
+//     color $main
+//     &:hover
+//       opacity .7
+//   &--full-size
+//     padding 2.2rem 3rem
+//     text-align center
+//     width 100%
+//   & + .btn
+//     margin-left 2rem
+.btn
+  align-items center
+  // cursor pointer
+  display inline-flex
+  min-height 8rem
+  &__icon
+    align-items center
+    border 2px solid #fff
+    border-radius 50%
+    circle(8rem)
+    display flex
+    justify-content center
+    margin-right 2rem
+    transition all .3s ease
+  .svg
+    transform translateX(2px)
+  &__text
+    color #fff
+    font-size 2rem
+    font-weight 600
+    transform translateY(-2px)
+  &:hover
+    .btn
+      &__icon
+        background-color $primary
+        border-color $primary
+        circle(6.4rem)
+
+.flatpickr
+  &-month
+    margin-bottom 1rem
+  &-calendar
+    padding 1.5rem 0
+    &.arrowTop,
+    &.arrowBottom
+      &:before,
+      &:after
+        display none !important
+
+.form-control
+  // min-height 5rem
+  margin-bottom 1.6rem
+  position relative
+  label
+    color $main
+    cursor text
+    display inline-block
+    line-height 1
+    font-weight 500
+    margin-bottom 1.8rem
+    transition all .2s
+    max-width 100%
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea
+    background $third
+    border none
+    color #fff
+    display block
+    font-family $font
+    font-size 1.6rem
+    line-height 1
+    // min-height 4rem
+    transition border-color .2s
+    padding 2rem 3.2rem
+    position relative
+    resize vertical
+    width 100%
+    -webkit-appearance none
+    // &:focus
+    //   border-color $primary
+    //   & + .form-control__icon
+    //     transform rotate(180deg)
+  textarea
+    height 100%
+    min-height 16rem
+
+  &--error
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea,
+    .select2-selection--single
+      border-color $error
+    label
+      color $error
+    .form-control__icon
+      color $error
+  
+  &--inline
+    align-items center
+    display flex
+    justify-content space-between
+    label
+      flex-shrink 0
+      margin-bottom 0
+      margin-right 5rem
+    input,
+    select,
+    .select2-selection--single
+      max-width 40%
+    .form-control
+      &__text
+        top 1.8rem
+
+
+.select2
+  &-container--default
+    .select2-selection__arrow b
+      display none
+  &-dropdown
+    border $border
+  &-selection
+    &--single
+      height initial !important
+    &__rendered
+      line-height 1.2 !important
+      padding-left 0 !important
+  &-results__option
+    padding 1.2rem
+    padding-left 2rem
+  &-container--open .select2-dropdown--below
+    box-shadow 0 16px 24px 0 rgba(135, 149, 163, .1)
+  &-dropdown.select2-dropdown--below 
+    animation fadeUp .3s forwards
+
+
+// dropdown element hover
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+  background-color $primary
+
+.checkbox
+  cursor pointer
+  display block
+  // margin-bottom 1rem
+  user-select none
+  &__label
+    background transparent
+    border-radius $radius
+    border $border
+    cursor pointer
+    circle(1.8rem)
+    display inline-block
+    margin-right 1rem
+    position relative
+    vertical-align middle
+    z-index 1
+    &:after
+      color $main
+      content "\f00c"
+      display none
+      font-family 'FontAwesome'
+      font-size 1.3rem
+      left 2px
+      position absolute
+      top 1px
+      z-index 10
+  input
+    display none
+  input:checked + .checkbox__label
+    // border-color $primary
+    &:after
+      display block
+  label
+    color $main
+    display inline-block
+    cursor pointer
+    vertical-align middle
+  a
+    border-bottom 1px dotted #bbb
+
+.radio
+  cursor pointer
+  display block
+  margin-bottom 1rem
+  user-select none
+  &__label
+    background transparent
+    border-radius 50%
+    border 1px solid $light-gray - 10%
+    cursor pointer
+    circle(2.4rem)
+    display inline-block
+    margin-right 1rem
+    position relative
+    vertical-align middle
+    z-index 1
+    &:after
+      background-color $primary
+      border-radius 50%
+      circle(1.4rem)
+      color #fff
+      content ''
+      display none
+      font-size 1.5rem
+      left 4px
+      position absolute
+      top 4px
+      z-index 10
+  input
+    display none
+  input:checked + .radio__label
+    background-color #fff
+    border-color $primary
+    box-shadow 0 0 0 1px $primary
+    &:after
+      display block
+  label
+    color $main
+    display inline-block
+    cursor pointer
+    vertical-align middle
+
+.file-upload
+  display block
+  margin-bottom .8rem
+  margin-top .8rem
+  input
+    display none
+    
+.tabs
+  &__header-container
+    display flex
+    justify-content center
+    position relative
+  &__header
+    background-color #fff
+    border-radius $radius
+    border $border
+    display flex
+    margin-bottom 4rem
+  &__link
+    cursor pointer
+    display block
+    padding 1.2rem 3rem
+    &:not(:last-child)
+      border-right $border
+    &--active
+      background-color $primary
+      border-radius $radius
+      color #fff
+
+  &__buttons
+    align-items center
+    display flex
+    position absolute
+    top .5rem
+    right 0
+    .item
+      align-items center
+      display flex
+      &:not(:last-child)
+        margin-right 5rem
+      &__icon
+        margin-right 1rem
+        img
+          display block
+      &__text
+        font-weight 500
+      &--type-2
+        .item
+          &__text
+            max-width 10rem
+    &--special
+      top -1rem
+  
+  &__content
+    display none
+    &--active
+      display block
+
+.noUi
+  &-value-large
+    &:nth-child(2)
+      margin-left 2rem
+    &:last-child
+      margin-left -2.5rem
+
+#initial-pay
+  .noUi
+    &-value-large
+      &:nth-child(2),
+      &:last-child
+        &:after
+          content ' млн'
+
+#credit-term
+  .noUi
+    &-value-large
+      &:nth-child(2)
+        &:after
+          content ' год'
+      &:last-child
+        &:after
+          content ' лет'
+
+@media(max-width 1200px)
+  .tabs__header-container
+    justify-content initial
+
+@media(max-width 1050px)
+  .tabs
+    &__header
+      display block
+      width 100%
+      &-container
+        display block
+    &__link
+      border-bottom 1px solid #eee
+      font-size 1.4rem
+      padding 1.2rem 1rem
+      width 100%
+      &:not(:last-child)
+        border none
+    &__buttons
+      margin-bottom 4rem
+      position initial
+  
+  .noUi-horizontal
+    margin-bottom 6rem
