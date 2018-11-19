@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
   $('.hero__video video').prop("volume", 0);
-  $('.hero__video video')[0].play();
 
   // SVG magic
   jQuery('img.svg').each(function(){
@@ -53,3 +52,7 @@ $(document).ready(function() {
 
 
 });
+
+$(window).on('load', function() {
+  $('.hero__video video')[0].play();
+})
