@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
-  $('.hero__video video').prop("volume", 0);
+  // $('.hero__video video').prop("volume", 0);
+
+  document.querySelector('video').play();
+  // if (promise !== undefined) {
+  //   promise.then(_ => {
+  //     // Autoplay started!
+  //     console.log('start')
+  //   }).catch(error => {
+  //     console.log('false');
+  //     // Autoplay was prevented.
+  //     // Show a "Play" button so that user can start playback.
+  //   });
+  // }
 
   // SVG magic
   jQuery('img.svg').each(function(){
@@ -53,6 +65,6 @@ $(document).ready(function() {
 
 });
 
-$(window).on('load', function() {
-  $('.hero__video video')[0].play();
-})
+// $(window).on('load', function() {
+//   $('.hero__video video')[0].play();
+// })
