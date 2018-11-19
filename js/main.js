@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.hero__video video').prop("volume", 0);
+
   // SVG magic
   jQuery('img.svg').each(function(){
     var $img = jQuery(this);
