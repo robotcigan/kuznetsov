@@ -1,18 +1,7 @@
 $(document).ready(function() {
 
-  // $('.hero__video video').prop("volume", 0);
-
-  document.querySelector('video').play();
-  // if (promise !== undefined) {
-  //   promise.then(_ => {
-  //     // Autoplay started!
-  //     console.log('start')
-  //   }).catch(error => {
-  //     console.log('false');
-  //     // Autoplay was prevented.
-  //     // Show a "Play" button so that user can start playback.
-  //   });
-  // }
+  // Video
+  // document.querySelector('video').play();
 
   // SVG magic
   jQuery('img.svg').each(function(){

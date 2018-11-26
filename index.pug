@@ -4,7 +4,10 @@ extends layout.pug
 block content
 
   .hero
-    .hero__video
+
+    #hero__bg.hero__bg
+
+    //- .hero__video
       //- video(autoplay loop poster="./video/main.jpg")
       video(allow="autoplay" loop muted)
         source(src="./video/some.mp4" type="video/mp4")
