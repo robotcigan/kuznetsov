@@ -1037,16 +1037,17 @@ body {
   cursor: none !important;
 }
 .cursor {
+  background-color: #fff;
+  border-radius: 50%;
   height: 0.8rem;
   width: 0.8rem;
-  top: -4rem;
   left: -4rem;
+  mix-blend-mode: difference;
   pointer-events: none;
   position: fixed;
-  border-radius: 50%;
-  z-index: 99999;
-  background-color: #fff;
+  top: -4rem;
   will-change: left, top;
+  z-index: 99999;
 }
 .cursor:before {
   height: 6.4rem;
@@ -1135,8 +1136,64 @@ body {
   color: #fff;
   opacity: 0.7;
 }
-.section2 {
-  height: 100vh;
+.works {
+  display: -ms-flexbox;
+  display: flex;
+}
+.works .work {
+  position: relative;
+  width: 100%;
+}
+.works .work__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+.works .work__img img {
+  display: block;
+  width: 100%;
+}
+.works .work__img:after {
+  background-color: #006dd5;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease;
+  width: 0;
+}
+.works .work__hover {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  max-width: 70%;
+  opacity: 0;
+  padding: 8rem 6.4rem;
+  position: absolute;
+  -ms-transform: translateY(4.8rem);
+  transform: translateY(4.8rem);
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+.works .work__type {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.works .work__title {
+  font-family: 'Gosha Sans', 'Arial', 'Helvetica', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.works .work:hover .work__img:after {
+  width: 100%;
+}
+.works .work:hover .work__hover {
+  opacity: 1;
+  -ms-transform: none;
+  transform: none;
 }
 .grid--container {
   max-width: 190rem;

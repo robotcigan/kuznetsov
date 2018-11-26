@@ -31,6 +31,55 @@
     opacity .7
     // transform translateZ(20px)
 
+.works
+  display flex
+  .work
+    position relative
+    width 100%
+    &__img
+      object-fit cover
+      position relative
+      img
+        display block
+        width 100%
+      &:after
+        background-color $primary
+        content ''
+        height 100%
+        left 0
+        position absolute
+        top 0
+        transition all .3s ease
+        width 0
+    &__hover
+      bottom 0
+      color #fff
+      left 0
+      max-width 70%
+      opacity 0
+      padding 8rem 6.4rem
+      position absolute
+      transform translateY(4.8rem)
+      transition all .3s ease
+      z-index 50
+    &__type
+      font-size 1.6rem
+      font-weight 400
+      margin-bottom .8rem
+    &__title
+      font-family $font-header
+      font-size 3.2rem
+      font-weight 700
+      line-height 1.2
+    &:hover
+      .work
+        &__img
+          &:after
+            width 100%
+        &__hover
+          opacity 1
+          transform none
+      
 
-.section2
-  height 100vh
+// .section2
+//   height 100vh

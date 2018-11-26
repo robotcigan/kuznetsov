@@ -1,0 +1,17 @@
+$src = '../fonts/GoshaSans/'
+$name = 'GoshaSans'
+
+font(name, type, weight, style)
+  font-family name
+  src url($src + name + type + '.eot?#iefix') format('embedded-opentype'),
+      url($src + name + type + '.otf') format('opentype'),
+      url($src + name + type + '.woff') format('woff'),
+      url($src + name + type + '.ttf') format('truetype')
+  font-weight weight
+  font-style style
+
+@font-face
+  font($name,'-Regular', 400, normal)
+
+@font-face
+  font($name,'-Bold', 700, normal)

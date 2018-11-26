@@ -47,6 +47,20 @@ $(document).ready(function () {
     $(this).blast({ delimiter: "word" });
   });
 
+  // Works
+  // $('.work').on('mouseenter', function() {
+  //   let workPlate = new TweenMax.to($(this).find('.work__hover'), 1, {
+  //     ease: Power4.easeInOut,
+  //     opacity: 1
+  //   });
+  //   let workTitle = new TweenMax.to($(this).find('.work__hover'), 1, {
+  //     ease: Power4.easeInOut,
+  //     opacity: 1
+  //   });
+  //   let workHoverTimeline = new TimelineMax().add(workPlate);
+  //   // TweenMax.to($(this).find())
+  // })
+
   // Basic animation
   $('.basic-animation-container').each(function () {
     var basicAnimation = new TimelineMax().staggerFromTo($(this).find('.basic-animation'), .5, {

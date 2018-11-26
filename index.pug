@@ -67,18 +67,25 @@ block content
                     img(src="./img/arrow.svg", alt="").svg
                   .btn__text Заказать разработку
 
-  section.section
+  section.section.works-section
     .grid.grid--container
       .row
         .col.col--lg-8.col--lg-offset-2
           h2.h2 Мои работы
-          .row.basic-animation-container
-            .col.col--sm-4
-              p.basic-animation Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae velit natus, voluptatem unde dolore tempora repellendus fugiat, minima tempore beatae iure fugit perferendis amet numquam a reiciendis harum dolor ducimus.
-            .col.col--sm-4
-              p.basic-animation Est commodi nisi voluptatibus! Quaerat labore voluptatem enim incidunt similique debitis quasi, quos eaque placeat vitae praesentium cupiditate, maxime porro quia iste nihil commodi sunt, magni blanditiis optio ad deserunt!
-            .col.col--sm-4
-              p.basic-animation Corrupti alias praesentium culpa incidunt illo nesciunt, delectus, nam, eveniet, maxime ut commodi. Praesentium iste ullam beatae voluptatem atque odio ad perferendis mollitia. Dignissimos aspernatur similique dolore modi, dolorem beatae?
+    .basic-animation-container
+      .works
+        .work.basic-animation
+          .work__hover
+            .work__type Парсер
+            .work__title Разработка парсера фотографий instagram
+          .work__img
+            img(src="./img/work-1.jpg", alt="")
+        .work.basic-animation
+          .work__hover
+            .work__type Парсер
+            .work__title Разработка парсера фотографий instagram
+          .work__img
+            img(src="./img/work-2.jpg", alt="")
 
   section.section
     .grid.grid--container
@@ -86,8 +93,9 @@ block content
         .col.col--lg-8.col.col--lg-offset-2
           .row
             .col.col--sm-6
-              h2.h2 Отправить заявку на разработку
-              p Геометрическая прогрессия стремительно нейтрализует контрпример. По сути, умножение двух векторов (векторное) упорядочивает убывающий разрыв
+              .basic-animation-container
+                h2.h2 Отправить заявку на разработку
+                p.basic-animation Геометрическая прогрессия стремительно нейтрализует контрпример. По сути, умножение двух векторов (векторное) упорядочивает убывающий разрыв
             .col.col--sm-5.col--sm-offset-1
               form.form.basic-animation-container
                 .form-control.basic-animation

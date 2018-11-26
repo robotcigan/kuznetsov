@@ -6,17 +6,17 @@ body
   cursor none !important
 
 .cursor
-  circle(.8rem)
-  top -4rem
-  left -4rem
-  pointer-events none
-  // display none
-  position fixed
-  border-radius 50%
-  z-index 99999
-  // background-color $primary
   background-color #fff
+  // background-color $primary
+  border-radius 50%
+  circle(.8rem)
+  left -4rem
+  mix-blend-mode difference
+  pointer-events none
+  position fixed
+  top -4rem
   will-change left, top
+  z-index 99999
   &:before
     circle(6.4rem)
     content ''
