@@ -22,6 +22,10 @@ $(document).ready(function() {
       TweenMax.to('.hero__video', 1, {
         ease: Power4.easeInOut,
         opacity: 0
+      }),
+      TweenMax.to('.hero__bg', 1, {
+        ease: Power4.easeInOut,
+        opacity: 0
       })
     ]);
   let scene = new ScrollMagic.Scene({

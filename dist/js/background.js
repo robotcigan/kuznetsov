@@ -1,6 +1,6 @@
 'use strict';
 
-var SEPARATION = 100,
+var SEPARATION = 50,
     AMOUNTX = 40,
     AMOUNTY = 40;
 var container = void 0,
@@ -11,15 +11,14 @@ var camera = void 0,
 var particles = void 0,
     particle = void 0,
     count = 0;
-var mouseX = 0,
-    mouseY = 0;
+// let mouseX = 0, mouseY = 0;
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
 function init() {
   container = document.getElementById('hero__bg');
   camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-  camera.position.z = 800; // Good var to change
+  camera.position.z = 1000; // Good var to change
   scene = new THREE.Scene();
   particles = new Array();
   var PI2 = Math.PI * 2;
@@ -28,7 +27,7 @@ function init() {
     color: 0x006DD5,
     program: function program(context) {
       context.beginPath();
-      context.arc(0, 0, 0.4, 0, PI2, true);
+      context.arc(0, 0, 0.3, 0, PI2, true);
       context.fill();
     }
   });
@@ -51,11 +50,11 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
-  stats = new Stats();
-  container.appendChild(stats.dom);
+  // stats = new Stats();
+  // container.appendChild( stats.dom );
   // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-  document.addEventListener('touchstart', onDocumentTouchStart, false);
-  document.addEventListener('touchmove', onDocumentTouchMove, false);
+  // document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+  // document.addEventListener( 'touchmove', onDocumentTouchMove, false );
   //
   window.addEventListener('resize', onWindowResize, false);
 }
@@ -73,26 +72,26 @@ function onWindowResize() {
 //   mouseY = event.clientY - windowHalfY;
 // }
 
-function onDocumentTouchStart(event) {
-  if (event.touches.length === 1) {
-    event.preventDefault();
-    mouseX = event.touches[0].pageX - windowHalfX;
-    mouseY = event.touches[0].pageY - windowHalfY;
-  }
-}
+// function onDocumentTouchStart(event) {
+//   if (event.touches.length === 1) {
+//     event.preventDefault();
+//     mouseX = event.touches[ 0 ].pageX - windowHalfX;
+//     mouseY = event.touches[ 0 ].pageY - windowHalfY;
+//   }
+// }
 
-function onDocumentTouchMove(event) {
-  if (event.touches.length === 1) {
-    event.preventDefault();
-    mouseX = event.touches[0].pageX - windowHalfX;
-    mouseY = event.touches[0].pageY - windowHalfY;
-  }
-}
+// function onDocumentTouchMove( event ) {
+//   if (event.touches.length === 1) {
+//     event.preventDefault();
+//     mouseX = event.touches[ 0 ].pageX - windowHalfX;
+//     mouseY = event.touches[ 0 ].pageY - windowHalfY;
+//   }
+// }
 
 function animate() {
   requestAnimationFrame(animate);
   render();
-  stats.update();
+  // stats.update();
 }
 
 function render() {

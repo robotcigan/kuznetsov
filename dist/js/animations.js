@@ -22,6 +22,9 @@ $(document).ready(function () {
   var hero = new TimelineMax().add([TweenMax.to('.hero__video', 1, {
     ease: Power4.easeInOut,
     opacity: 0
+  }), TweenMax.to('.hero__bg', 1, {
+    ease: Power4.easeInOut,
+    opacity: 0
   })]);
   var scene = new ScrollMagic.Scene({
     triggerElement: '.hero',
