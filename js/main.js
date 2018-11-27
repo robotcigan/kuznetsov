@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // Video
-  // document.querySelector('video').play();
+  document.querySelector('video').play();
 
   // SVG magic
   jQuery('img.svg').each(function(){
