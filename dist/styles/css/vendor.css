@@ -1704,5 +1704,17 @@ img.mfp-img {
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GoshaSans';
+  src: url("../fonts/GoshaSans/GoshaSans-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/GoshaSans/GoshaSans-Regular.otf") format('opentype'), url("../fonts/GoshaSans/GoshaSans-Regular.woff") format('woff'), url("../fonts/GoshaSans/GoshaSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GoshaSans';
+  src: url("../fonts/GoshaSans/GoshaSans-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/GoshaSans/GoshaSans-Bold.otf") format('opentype'), url("../fonts/GoshaSans/GoshaSans-Bold.woff") format('woff'), url("../fonts/GoshaSans/GoshaSans-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 /*# sourceMappingURL=vendor.css.map */
