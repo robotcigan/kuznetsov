@@ -45,12 +45,13 @@ $(document).ready(function () {
   });
 
   // Tilt.js
-  $('.tilt').tilt({
-    easing: 'cubic-bezier(.33,1.02,.58,1)',
-    maxTilt: 5,
-    glare: true,
-    maxGlare: .05
-  });
+  // $('.tilt').tilt({
+  //   easing: 'cubic-bezier(.33,1.02,.58,1)',
+  //   maxTilt: 5,
+  //   glare: true,
+  //   maxGlare: .05
+  // });
+
 });
 
 // $(window).on('load', function() {
