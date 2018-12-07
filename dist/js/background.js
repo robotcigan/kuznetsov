@@ -1,8 +1,8 @@
 'use strict';
 
 var SEPARATION = 50,
-    AMOUNTX = 40,
-    AMOUNTY = 40;
+    AMOUNTX = 35,
+    AMOUNTY = 35;
 var container = void 0,
     stats = void 0;
 var camera = void 0,
@@ -18,7 +18,13 @@ var windowHalfY = window.innerHeight / 2;
 function init() {
   container = document.getElementById('hero__bg');
   camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-  camera.position.z = 1000; // Good var to change
+  // Good var to change
+  // camera.position.z = 700;
+  // camera.position.x = 800;
+  // camera.position.y = 200;
+  camera.position.z = 700;
+  camera.position.x = 800;
+  camera.position.y = 200;
   scene = new THREE.Scene();
   particles = new Array();
   var PI2 = Math.PI * 2;
@@ -50,8 +56,8 @@ function init() {
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
-  // stats = new Stats();
-  // container.appendChild( stats.dom );
+  stats = new Stats();
+  container.appendChild(stats.dom);
   // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
   // document.addEventListener( 'touchstart', onDocumentTouchStart, false );
   // document.addEventListener( 'touchmove', onDocumentTouchMove, false );
@@ -91,25 +97,24 @@ function onWindowResize() {
 function animate() {
   requestAnimationFrame(animate);
   render();
-  // stats.update();
+  stats.update();
 }
 
 function render() {
-  renderer.setClearColor(0x000000, 1);
+  renderer.setClearColor(0x1B1B20, 1);
   // camera.position.x += ( mouseX - camera.position.x ) * .05;
   // camera.position.y += ( - mouseY - camera.position.y ) * .05;
-  camera.position.y = 200;
   camera.lookAt(scene.position);
   var i = 0;
   for (var ix = 0; ix < AMOUNTX; ix++) {
     for (var iy = 0; iy < AMOUNTY; iy++) {
       particle = particles[i++];
-      particle.position.y = Math.sin((ix + count) * 0.3) * 50 + Math.sin((iy + count) * 0.5) * 50;
+      particle.position.y = Math.sin((ix + count) * 0.3) * 25 + Math.sin((iy + count) * 0.5) * 25;
       particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.3) + 1) * 4 + (Math.sin((iy + count) * 0.5) + 1) * 4;
     }
   }
   renderer.render(scene, camera);
-  count += 0.1;
+  count += 0.05;
 }
 
 init();

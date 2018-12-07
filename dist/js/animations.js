@@ -2,6 +2,13 @@
 
 $(document).ready(function () {
 
+  // let heroBg = new TweenMax.fromTo('.hero__bg', 1, {
+  //   opacity: 0
+  // },
+  // {
+  //   opacity: 1
+  // });
+
   // Header
   var anim1 = new TweenMax.to('.main-header', 1, {
     ease: Power4.easeInOut,

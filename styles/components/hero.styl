@@ -3,12 +3,25 @@
   display flex
   // overflow hidden
   height 100vh
+  position relative
   width 100%
-  &__bg
-    animation wave 30s infinite both linear
+  &:before
+    animation stars 10s infinite both ease
+    content ''
+    background url('../../img/stars-bg.png') top center no-repeat
+    background-size 100%
     height 100%
     left 0
-    opacity .8
+    opacity .5
+    position absolute
+    top 0
+    width 100%
+    z-index 20
+  &__bg
+    // animation wave 30s infinite both linear
+    height 100%
+    left 0
+    // opacity .8
     overflow hidden
     position fixed
     top 0
@@ -25,7 +38,8 @@
       width 100%
     &:after
       content ''
-      background radial-gradient(500px at 50% 50%, rgba($primary, .3) 0%, rgba(#000, 0) 100%)
+      background radial-gradient(500px at 50% 50%, rgba($primary, 1) 0%, rgba(#000, 0) 100%)
+      mix-blend-mode multiply
       height 100%
       left 0
       position fixed
@@ -83,6 +97,19 @@
 
 .some
   opacity 0
+
+@keyframes stars
+  0%
+    opacity .4
+  25%
+    opacity .7
+  50%
+    opacity .4
+  75%
+    opacity .7
+  100%
+    opacity .4
+
   
 @keyframes scroll-down
   0%
