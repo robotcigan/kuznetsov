@@ -1,8 +1,8 @@
 'use strict';
 
-var SEPARATION = 50,
-    AMOUNTX = 35,
-    AMOUNTY = 35;
+var SEPARATION = 60,
+    AMOUNTX = 25,
+    AMOUNTY = 25;
 var container = void 0,
     stats = void 0;
 var camera = void 0,
@@ -19,11 +19,14 @@ function init() {
   container = document.getElementById('hero__bg');
   camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
   // Good var to change
-  // camera.position.z = 700;
+  // camera.position.z = 2000;
   // camera.position.x = 800;
   // camera.position.y = 200;
-  camera.position.z = 700;
-  camera.position.x = 800;
+  // camera.position.z = 700;
+  // camera.position.x = 200;
+  // camera.position.y = 200;
+  camera.position.z = 500;
+  camera.position.x = 100;
   camera.position.y = 200;
   scene = new THREE.Scene();
   particles = new Array();
@@ -58,10 +61,6 @@ function init() {
   container.appendChild(renderer.domElement);
   stats = new Stats();
   container.appendChild(stats.dom);
-  // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-  // document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-  // document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-  //
   window.addEventListener('resize', onWindowResize, false);
 }
 
@@ -73,27 +72,6 @@ function onWindowResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-// function onDocumentMouseMove(event) {
-//   mouseX = event.clientX - windowHalfX;
-//   mouseY = event.clientY - windowHalfY;
-// }
-
-// function onDocumentTouchStart(event) {
-//   if (event.touches.length === 1) {
-//     event.preventDefault();
-//     mouseX = event.touches[ 0 ].pageX - windowHalfX;
-//     mouseY = event.touches[ 0 ].pageY - windowHalfY;
-//   }
-// }
-
-// function onDocumentTouchMove( event ) {
-//   if (event.touches.length === 1) {
-//     event.preventDefault();
-//     mouseX = event.touches[ 0 ].pageX - windowHalfX;
-//     mouseY = event.touches[ 0 ].pageY - windowHalfY;
-//   }
-// }
-
 function animate() {
   requestAnimationFrame(animate);
   render();
@@ -101,9 +79,7 @@ function animate() {
 }
 
 function render() {
-  renderer.setClearColor(0x1B1B20, 1);
-  // camera.position.x += ( mouseX - camera.position.x ) * .05;
-  // camera.position.y += ( - mouseY - camera.position.y ) * .05;
+  renderer.setClearColor(0x000, 1);
   camera.lookAt(scene.position);
   var i = 0;
   for (var ix = 0; ix < AMOUNTX; ix++) {

@@ -12,7 +12,8 @@
     "blast-text": "^2.0.0",
     "gulp-uglifycss": "^1.0.6",
     "jquery": "^3.2.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",

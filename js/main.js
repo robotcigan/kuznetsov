@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
   // Video
   // document.querySelector('video').play();
 
@@ -57,3 +59,9 @@ $(document).ready(function() {
 // $(window).on('load', function() {
 //   $('.hero__video video')[0].play();
 // })
+
+$(window).on('load', () => {
+  particlesJS.load('particles-js', '/js/particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+})

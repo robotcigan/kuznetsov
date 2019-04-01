@@ -918,7 +918,7 @@ p {
   background-size: 100%;
   height: 100%;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   width: 100%;
@@ -929,7 +929,8 @@ p {
   left: 0;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  top: 0vh;
+  padding-top: 20vh;
   width: 100%;
   z-index: 0;
 }
@@ -980,6 +981,14 @@ p {
   margin-bottom: 3.2rem;
   opacity: 0.7;
 }
+#particles-js {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 .scroll-down {
   background-color: rgba(255,255,255,0.2);
   bottom: 0;
@@ -1004,19 +1013,19 @@ p {
 }
 @keyframes stars {
   0% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   25% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   75% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   100% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
 }
 @keyframes scroll-down {
@@ -1130,6 +1139,7 @@ body {
 .section {
   background: #010103;
   margin-bottom: 12rem;
+  padding-top: 1.2rem;
 }
 .section .h2 {
   color: #fff;
