@@ -1,8 +1,8 @@
 'use strict';
 
 var SEPARATION = 80,
-    AMOUNTX = 25,
-    AMOUNTY = 25;
+    AMOUNTX = 28,
+    AMOUNTY = 23;
 var container = void 0,
     stats = void 0;
 var camera = void 0,
@@ -22,7 +22,7 @@ function init() {
   // camera.position.z = 2000;
   // camera.position.x = 800;
   // camera.position.y = 200;
-  camera.position.z = 500;
+  camera.position.z = 400;
   camera.position.x = 100;
   camera.position.y = 200;
   scene = new THREE.Scene();
@@ -87,7 +87,7 @@ function render() {
     }
   }
   renderer.render(scene, camera);
-  count += 0.05;
+  count += 0.06;
 }
 
 init();

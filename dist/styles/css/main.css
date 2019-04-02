@@ -930,7 +930,7 @@ p {
   overflow: hidden;
   position: fixed;
   top: 0vh;
-  padding-top: 24vh;
+  padding-top: 30vh;
   width: 100%;
   z-index: 0;
 }
