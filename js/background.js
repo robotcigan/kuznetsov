@@ -1,4 +1,4 @@
-const SEPARATION = 50, AMOUNTX = 35, AMOUNTY = 35;
+const SEPARATION = 80, AMOUNTX = 25, AMOUNTY = 25;
 let container, stats;
 let camera, scene, renderer;
 let particles, particle, count = 0;
@@ -13,8 +13,8 @@ function init() {
   // camera.position.z = 2000;
   // camera.position.x = 800;
   // camera.position.y = 200;
-  camera.position.z = 700;
-  camera.position.x = 800;
+  camera.position.z = 500;
+  camera.position.x = 100;
   camera.position.y = 200;
   scene = new THREE.Scene();
   particles = new Array();

@@ -58,7 +58,7 @@ html {
   width: 100%;
 }
 body {
-  color: #010103;
+  color: #1b1b20;
   background: #fff;
   font-family: 'Gerbera', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
@@ -138,7 +138,7 @@ body * {
   position: relative;
 }
 .form-control label {
-  color: #010103;
+  color: #1b1b20;
   cursor: text;
   display: inline-block;
   line-height: 1;
@@ -260,7 +260,7 @@ body * {
   z-index: 1;
 }
 .checkbox__label:after {
-  color: #010103;
+  color: #1b1b20;
   content: "\f00c";
   display: none;
   font-family: 'FontAwesome';
@@ -277,7 +277,7 @@ body * {
   display: block;
 }
 .checkbox label {
-  color: #010103;
+  color: #1b1b20;
   display: inline-block;
   cursor: pointer;
   vertical-align: middle;
@@ -333,7 +333,7 @@ body * {
   display: block;
 }
 .radio label {
-  color: #010103;
+  color: #1b1b20;
   display: inline-block;
   cursor: pointer;
   vertical-align: middle;
@@ -472,7 +472,7 @@ p {
   margin-bottom: 1rem;
 }
 p {
-  color: #010103;
+  color: #1b1b20;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.6;
@@ -517,7 +517,7 @@ p {
 .modal {
   animation: bigFadeUp 0.3s forwards ease;
   background: #fff;
-  box-shadow: 0 1rem 2rem rgba(1,1,3,0.1);
+  box-shadow: 0 1rem 2rem rgba(27,27,32,0.1);
   border-radius: 4px;
   display: none;
   margin: 10rem auto;
@@ -867,7 +867,7 @@ p {
   display: none;
 }
 .noUi-pips {
-  color: #010103;
+  color: #1b1b20;
   font-family: 'Gerbera', 'Arial', 'Helvetica', sans-serif;
   font-weight: 300;
 }
@@ -904,7 +904,7 @@ p {
   text-align: right;
 }
 .hero {
-  background-color: #010103;
+  background-color: #1b1b20;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
@@ -930,7 +930,7 @@ p {
   overflow: hidden;
   position: fixed;
   top: 0vh;
-  padding-top: 20vh;
+  padding-top: 24vh;
   width: 100%;
   z-index: 0;
 }
@@ -1133,11 +1133,11 @@ body {
   opacity: 0;
 }
 .index-wrapper {
-  background-color: #010103;
+  background-color: #1b1b20;
   padding-bottom: 32rem;
 }
 .section {
-  background: #010103;
+  background: #1b1b20;
   margin-bottom: 12rem;
   padding-top: 1.2rem;
 }

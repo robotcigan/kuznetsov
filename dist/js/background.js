@@ -1,6 +1,6 @@
 'use strict';
 
-var SEPARATION = 60,
+var SEPARATION = 80,
     AMOUNTX = 25,
     AMOUNTY = 25;
 var container = void 0,
@@ -21,9 +21,6 @@ function init() {
   // Good var to change
   // camera.position.z = 2000;
   // camera.position.x = 800;
-  // camera.position.y = 200;
-  // camera.position.z = 700;
-  // camera.position.x = 200;
   // camera.position.y = 200;
   camera.position.z = 500;
   camera.position.x = 100;
@@ -79,7 +76,7 @@ function animate() {
 }
 
 function render() {
-  renderer.setClearColor(0x000, 1);
+  renderer.setClearColor(0x1B1B20, 1);
   camera.lookAt(scene.position);
   var i = 0;
   for (var ix = 0; ix < AMOUNTX; ix++) {
